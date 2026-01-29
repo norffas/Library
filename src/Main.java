@@ -6,18 +6,17 @@ public class Main {
         userController userController = new userController();
         bookController bookController = new bookController();
         userController.addUser("audiopunk", "sergey", "ivanov");
-        userController.addUser("tvar", "viktor", "jukov");
-        userController.addUser("urod", "viktor", "jukov");
+        userController.addUser("check", "viktor", "jukov");
+        userController.addUser("test", "viktor", "jukov");
         bookController.addBook("Sidorenko", "V parke", "Adventure");
         bookController.addBook("Pelevin", "V govne", "Base");
         bookController.addBook("Kizaru", "Dejavu", "Base");
         bookController.printBooks("Base");
-        userController.takeBook("tvar", bookController.getBook("2"));
-        userController.takeBook("tvar", bookController.getBook("1"));
-        userController.printUserInfo("tvar");
-        userController.returnBook("tvar", bookController.getBook("2"));
-        userController.printUserInfo("tvar");
-        System.out.println("privet Danil");
+        userController.takeBook("test", bookController.getBook("2"));
+        userController.takeBook("test", bookController.getBook("1"));
+        userController.printUserInfo("test");
+        userController.returnBook("test", bookController.getBook("2"));
+        userController.printUserInfo("test");
 
     }
 }
